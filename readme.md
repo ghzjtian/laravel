@@ -1,3 +1,15 @@
+
+# Auth 管理
+
+* 1.配置数据库的信息
+* 2.通过命令 ```php artisan key:generate``` 生成 ```APP_KEY``` .
+* 3.运行命令 ```php artisan make:auth``` 生成 ```auth``` 的视图文件等等.
+* 4.完成数据库的迁移 ```php artisan migrate``` .
+
+***
+***
+***
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
