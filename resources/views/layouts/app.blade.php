@@ -50,6 +50,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{-- // 获取当前已认证的用户 的名字... --}}
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -57,6 +58,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                        {{--多语言支持  https://laravel-china.org/docs/laravel/5.6/localization/1376#using-short-keys  --}}
                                         {{ __('Logout') }}
                                     </a>
 

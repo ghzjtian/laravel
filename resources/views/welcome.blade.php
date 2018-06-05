@@ -68,6 +68,7 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    {{--如果已经登录了，就显示 Home 在右上角.--}}
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else

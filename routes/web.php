@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// ->name 路由命名,https://laravel-china.org/docs/laravel/5.6/routing/1363
 Route::get('/home', 'HomeController@index')->name('home');
