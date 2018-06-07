@@ -13,6 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        //只有认证的用户才可以进入。
         $this->middleware('auth');
     }
 

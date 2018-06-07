@@ -19,3 +19,8 @@ Auth::routes();
 
 // ->name 路由命名,https://laravel-china.org/docs/laravel/5.6/routing/1363
 Route::get('/home', 'HomeController@index')->name('home');
+
+// 基于 HTTP 的基本认证
+Route::get('profile',function(){
+    return view('profile');
+})->middleware('auth.basic');

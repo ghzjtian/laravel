@@ -5,6 +5,10 @@
 * 2.通过命令 ```php artisan key:generate``` 生成 ```APP_KEY``` .
 * 3.运行命令 ```php artisan make:auth``` 生成 ```auth``` 的视图文件等等.
 * 4.完成数据库的迁移 ```php artisan migrate``` .
+* 5.[系统 auth 流程的解释](http://laravelacademy.org/post/8900.html)
+
+
+
 
 ***
 ***

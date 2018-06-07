@@ -14,6 +14,7 @@ return [
     */
 
     'defaults' => [
+        //指定使用哪个 guard 来实现认证
         'guard' => 'web',
         'passwords' => 'users',
     ],
