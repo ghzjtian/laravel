@@ -1,3 +1,24 @@
+# laravel 的 auth 模块的功能学习
+
+* 1.配置服务器的 reset password 的 email 设置时，一定要配置成这样的模样
+```$xslt
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.163.com
+MAIL_PORT=25
+MAIL_USERNAME=wyzjtian@163.com
+MAIL_PASSWORD=
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS=wyzjtian@163.com
+MAIL_FROM_NAME=tian
+```
+
+
+
+
+***
+***
+***
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
