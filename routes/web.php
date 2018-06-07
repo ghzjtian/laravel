@@ -21,6 +21,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // 基于 HTTP 的基本认证
-Route::get('profile',function(){
+Route::get('profile', function () {
     return view('profile');
 })->middleware('auth.basic');
+
+$this->get('/verify-user/{code}', 'Auth\RegisterController@activateUser')->name('activate.user');
