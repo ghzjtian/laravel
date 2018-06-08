@@ -28,6 +28,7 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 | executed in this console and the response sent back to a terminal
 | or another output device for the developers. Here goes nothing!
 |
+ 当我们运行控制台应用程序时，将在此控制台中执行当前的CLI命令，并将响应发送回终端或其他输出设备供开发人员使用。 这里什么都没有！
 */
 
 $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
@@ -46,6 +47,7 @@ $status = $kernel->handle(
 | so that any final work may be done by the application before we shut
 | down the process. This is the last thing to happen to the request.
 |
+一旦Artisan完成运行，我们将关闭关闭事件，以便在我们关闭该过程之前，可以通过应用程序完成任何最终工作。 这是要求发生的最后一件事。
 */
 
 $kernel->terminate($input, $status);

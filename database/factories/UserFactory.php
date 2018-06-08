@@ -11,6 +11,7 @@ use Faker\Generator as Faker;
 | your application. Factories provide a convenient way to generate new
 | model instances for testing / seeding your application's database.
 |
+ 该目录应包含应用程序的每个模型工厂定义。 工厂提供了一种便捷的方式来生成新的模型实例，以测试/种植应用程序的数据库。
 */
 
 $factory->define(App\User::class, function (Faker $faker) {

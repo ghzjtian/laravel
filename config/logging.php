@@ -13,6 +13,7 @@ return [
     | messages to the logs. The name specified in this option should match
     | one of the channels defined in the "channels" configuration array.
     |
+    此选项定义将消息写入日志时使用的默认日志通道。 此选项中指定的名称应该与“通道”配置阵列中定义的通道之一匹配。
     */
 
     'default' => env('LOG_CHANNEL', 'stack'),
@@ -26,6 +27,8 @@ return [
     | the box, Laravel uses the Monolog PHP logging library. This gives
     | you a variety of powerful log handlers / formatters to utilize.
     |
+    在这里您可以为您的应用程序配置日志通道。 开箱即用，Laravel使用Monolog PHP日志库。 这为您提供了各种功能强大的日志处理程序/格式化程序。
+
     | Available Drivers: "single", "daily", "slack", "syslog",
     |                    "errorlog", "monolog",
     |                    "custom", "stack"

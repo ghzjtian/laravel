@@ -12,6 +12,7 @@ return [
     | default location for this type of information, allowing packages
     | to have a conventional place to find your various credentials.
     |
+    该文件用于存储Stripe，Mailgun，SparkPost等第三方服务的凭证。 这个文件为这类信息提供了一个理智的默认位置，允许包有一个传统的地方来找到你的各种凭证。
     */
 
     'mailgun' => [

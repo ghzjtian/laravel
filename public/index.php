@@ -19,6 +19,9 @@ define('LARAVEL_START', microtime(true));
 | into the script here so that we don't have to worry about manual
 | loading any of our classes later on. It feels great to relax.
 |
+
+运行 Composer 的自动加载
+
 */
 
 require __DIR__.'/../vendor/autoload.php';
@@ -33,6 +36,9 @@ require __DIR__.'/../vendor/autoload.php';
 | will load up this application so that we can run it and send
 | the responses back to the browser and delight our users.
 |
+
+我们需要去启动 PHP 开发组件,让我们打开 lights, 引导框架让我们使用,然后它会加载这个 APP ,我们就可以运行和发送反馈给浏览器，
+同时使我们的用户感到愉悦.
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
@@ -47,6 +53,10 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | the client's browser allowing them to enjoy the creative
 | and wonderful application we have prepared for them.
 |
+
+我们有了这个 app 后，就可以通过 kernel 控制进来的请求,发送相关的返回数据跟客户端.
+
+
 */
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
