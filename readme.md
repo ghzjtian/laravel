@@ -6,7 +6,7 @@
 * 3.运行命令 ```php artisan make:auth``` 生成 ```auth``` 的视图文件等等.
 * 4.完成数据库的迁移 ```php artisan migrate``` .
 * 5.[系统 auth 流程的解释](http://laravelacademy.org/post/8900.html)
-
+* 6.[Login with Username or Email](https://medium.com/innohub/laravel-5-6-customizing-default-auth-part-2-login-with-username-or-email-e66a70217178)
 
 
 
