@@ -31,7 +31,12 @@ class RegisterController extends Controller
      */
     protected function register(Request $request)
     {
-        /** @var User $user */
+
+
+        /** @var User $user
+         *
+         * Illuminate\Foundation\Validation\ValidatesRequests -> validate
+         */
         $validatedData = $request->validate([
             'name'     => 'required|string|max:255',
             'username'     => 'required|string|max:255',

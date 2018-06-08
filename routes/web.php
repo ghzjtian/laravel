@@ -25,4 +25,7 @@ Route::get('profile', function () {
     return view('profile');
 })->middleware('auth.basic');
 
+/**
+ * 当点击了邮件的 'reset password' 的 button 时，的路由规则
+ */
 $this->get('/verify-user/{code}', 'Auth\RegisterController@activateUser')->name('activate.user');

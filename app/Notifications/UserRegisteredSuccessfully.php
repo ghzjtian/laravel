@@ -33,6 +33,10 @@ class UserRegisteredSuccessfully extends Notification
     /**
      * Get the mail representation of the notification.
      *
+     * 类似 Illuminate\Auth\Notifications\ResetPassword -> toMail 的内容.
+     *
+     * 都是继承自  notification.stub 文件的 toMail
+     *
      * @param  mixed  $notifiable
      * @return \Illuminate\Notifications\Messages\MailMessage
      */
