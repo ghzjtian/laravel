@@ -1,3 +1,19 @@
+# 1.在 auth 的基础上，加个验证码的例子.
+* [2.集成教程](https://laravel-china.org/topics/2895/extension-recommended-mewscaptcha-image-authentication-code-solution)
+* [3.GitHub 仓库地址](https://github.com/mewebstudio/captcha)
+
+
+
+
+
+
+
+
+
+***
+***
+***
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
