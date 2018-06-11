@@ -46,7 +46,8 @@ class RegisterController extends Controller
         try {
             $validatedData['password']        = bcrypt(array_get($validatedData, 'password'));
             $validatedData['activation_code'] = str_random(30).time();
-            $user                             = app(User::class)->create($validatedData);
+            $aUser = app(User::class);
+            $user = $aUser ->create($validatedData);
         } catch (\Exception $exception) {
             logger()->error($exception);
             return redirect()->back()->with('message', 'Unable to create new user.');

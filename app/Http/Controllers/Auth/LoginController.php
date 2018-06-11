@@ -32,6 +32,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        //除了 logout 的请求以外，其它的请求都需要是 guest 角色才可以进来这里,否则就会跳到 $redirectTo 界面.
         $this->middleware('guest')->except('logout');
     }
     /**
@@ -41,7 +42,10 @@ class LoginController extends Controller
     public function username()
     {
         $identity  = request()->get('identity');
+
+        //检查输入的 username 是否是 email 类型.
         $fieldName = filter_var($identity, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+        //在 request 中添加输入的类型
         request()->merge([$fieldName => $identity]);
         return $fieldName;
     }
